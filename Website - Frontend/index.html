@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta , name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 30px 20px;
+    height: 100%;
+}
+table {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 80;
+    letter-spacing: 2px;
+    border-collapse: collapse;
+}
+a { color: white;
+text-decoration : none;
+   }
+td, th {
+    border: 2px solid #19334d;
+    text-align: left;
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #2d5986;
+}
+tr:nth-child(odd) {
+    background-color: #2d5986;
+}
+tr:hover {
+    background-color: #3973ac;
+}
+th:hover {
+    background-color: #2d5986;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.left {
+
+    width: 22%;
+}
+.column.right {
+   
+    
+   font-family: 'Helvetica Neue', sans-serif; font-size: 1.3vw; font-weight: 60; letter-spacing: 1.5px;
+    width: 65%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column.left, .column.right {   
+        width: 100%;
+        padding: 0;
+    }
+}
+		#navigation {
+			position: absolute;
+			left: 0;
+			top:150px;
+			width: 15em;
+		}
+
+
+		#content {
+			margin-top: 80px;
+			margin-left: 15em;
+		}
+
+		 
+
+
+#home {background: #264d73;padding: 25px; text-align: center; color: white; font-family: 'Helvetica Neue', sans-serif; font-size: 50px; font-weight: 90; letter-spacing: 7px; }
+#homea {background: #264d73;padding: 5px; text-align: center; color: white; font-family: 'Helvetica Neue', sans-serif; font-size: 15px; font-weight: 50; letter-spacing: 2px; }
+#alertbodycolor{ color:black;background:#cc6666;}
+#Home {background-color:  #006699;}
+#News {background-color: #cc6666;margin-left:0px; right-margin:5px;}
+#Contact {background-color: #29a329;}
+#About {background-color: #a3a375;}
+#para {font-family: 'Helvetica Neue', sans-serif; font-size: 20px; font-weight: 40; letter-spacing: 1px;}
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 1.05em;
+width: 30em;
+padding: 1em;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm label {
+padding: 0;
+font-weight: bold;
+text-align: right;
+display: block;
+}
+
+.myForm input,
+.myForm select,
+.myForm textarea {
+margin-left: 2em;
+float: right;
+width: 20em;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 200px;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 14em;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, ' #006699')">Home</button>
+<button class="tablink" onclick="openPage('News', this, '#e60000')" id="defaultOpen">ALERT!</button>
+<button class="tablink" onclick="openPage('Contact', this, '#29a329')">Help</button>
+<button class="tablink" onclick="openPage('About', this, '#8a8a5c')">Support Us</button>
+
+<div id="Home" class="tabcontent">
+  <h3 id="home">TrackDisaster<p id="homea">Helping Humanity!</p> </h3>
+  <div class="row">
+  <div class="column left">
+            <table>
+  <tr>
+    <th>QUICK CORNER</th>
+  </tr>
+  <tr>
+    <td><a href="earthquake.html">EARTHQUAKE</a></td>
+  </tr>
+  <tr>
+  <td><a href="tsunami.html">TSUNAMI</a></td>
+  </tr>
+  <tr>
+    <td><a href="Cyclone.html">CYCLONE</a></td>
+  </tr>
+     
+    <td> <a href="drought.html">DROUGHT</a></td>
+  </tr>
+    <tr>
+    <td><a href="flood.html">FLOOD</a></td>
+  </tr>
+</table>
+        </div>
+        <div class="column right">
+<p>A natural disaster is a major adverse event resulting from natural processes 
+   of the Earth; examples are floods, hurricanes, tornadoes, volcanic eruptions,  
+   earthquakes, tsunamis, and other geologic processes. A natural disaster can  
+   cause loss of life or property damage,  and typically leaves some economic  
+   damage in its wake, the severity of which depends on the affected population's 
+   resilience, or ability to recover  and also on the infrastructure available.An 
+   adverse event will not rise  to the level of a disaster if it occurs in an area 
+   without vulnerable population.In a vulnerable area, however, such as Nepal during  
+   the 2015 earthquake, an earthquake can have disastrous consequences and leave 
+   lasting damage, which can  require years to repair.</p>
+  <img src="cyclone1.jpg" width="140" height="140" >
+   <img src="telegana2.jpg" width="140" height="140" >
+    <img src="cyclone3.jpg" width="140" height="140" >
+	 <img src="vish1.jpg" width="140" height="140" >
+	  <img src="cyclone5.jpg" width="140" height="140" >
+         </div>
+</div>
+
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>News</h3><div id="alertbodycolor">
+  <div id="navigation">
+		<ul>
+		 	<li><a href="#TELEGANA FLOODS"><font size="3">TELEGANA FLOODS</font></a></li>
+			 <li><a href="#CYCLONE AMPHAN"><font size="3">CYCLONE AMPHAN</font></a></li>
+		 <li><a href="#VISHAKAPATNAM GAS LEAK"><font size="3">VISHAKAPATNAM GAS LEAK</font></a></li>
+			
+		</ul>
+		</div>
+
+	<div id="content">
+	    
+		<h2>CURRENT DISASTERS IN INDIA</h2>
+		<p>Natural disasters in India, many of them related to the climate of India, cause massive losses of life and property. Droughts,  
+		flash floods, cyclones, avalanches,<br />  landslides brought on by torrential rains, and snowstorms pose the greatest threats.</p>
+		<img src="climate1.jpg" width="350" height="360" >
+		<h2 id="TELEGANA FLOODS">TELEGANA FLOODS</h2>
+		<p>According to the India Meteorological Office (IMD), Ghatkesar received record rainfall of 322 mm from Tuesday night to Wednesday morning.
+
+            Hyderabad has last seen such heavy October rains after 129 years.
+            
+            Hyderabad has set a record of wettest year in 2020 with 404% more than normal annual rainfall. <br /> Authorities in Hyderabad declared a holiday on Thursday and asked residents to stay indoors. Daily life has been disrupted in Hyderabad as many parts of the city lost power in the flooding. Residents posted pictures on Twitter of floating cars, waterlogged homes, offices and streets.</p>
+		 <img src="telegana1.jpg" width="350" height="360" >
+      <img src="telegana2.jpg" width="350" height="360" >
+	  
+	  
+	  
+	  
+	  <h2 id="CYCLONE AMPHAN">CYCLONE AMPHAN</h2>
+		<p>Super Cyclonic Storm Amphan (/ˈɑːmpɑːn/) was a powerful and deadly tropical cyclone that caused widespread damage in Eastern India, specifically West Bengal, and also Bangladesh in May 2020. It was the strongest tropical cyclone to strike the Ganges Delta since Sidr of the 2007 season and the first super cyclonic storm to have formed in the Bay of Bengal since the 1999 Odisha cyclone. It was also the fourth super cyclone that hit West Bengal since 1582, after 1737, 1833 and 1942, as well as being one of the strongest storm to impact the area.[1][2] It is currently tied with Harold and Haishen for the most intense tropical cyclone worldwide for 2020. Causing over US$13 billion of damage, Amphan is also the costliest cyclone ever recorded in the North Indian Ocean, surpassing the record held by Cyclone Nargis of 2008</p>
+		 <img src="cyclone1.jpg" width="350" height="360" >
+      <img src="cyclone2.jpg" width="350" height="360" >
+	  <p>On 18 May, at approximately 12:00 UTC, Amphan reached its peak intensity with 3-minute sustained wind speeds of 240 km/h (150 mph), 1-minute sustained wind speeds of 260 km/h (160 mph), and a minimum central barometric pressure of 920 mbar (27.17 inHg). The storm began an eyewall replacement cycle shortly after it reached its peak intensity, but the continued effects of dry air and wind shear disrupted this process and caused Amphan to gradually weaken as it paralleled the eastern coastline of India. On 20 May, between 10:00 and 11:00 UTC, the cyclone made landfall in West Bengal. At the time, the JTWC estimated Amphan's 1-minute sustained winds to be 155 km/h (100 mph). Amphan rapidly weakened once inland and dissipated shortly thereafter.<br /> triggered heavy to very heavy rainfall in Ganjam, Gajapati and Puri districts of Odisha, while damage of hutments and asbestos-roofed houses, street lights, road blockade<br /> due to uprooted trees were reported from Ganjam. Road communication between Paralakhemundi and Mohana and some other block headquarters in Gajapati had been<br /> disrupted under  the impact of the cyclone.</p>
+	  <img src="cyclone3.jpg" width="350" height="360" >
+	  <img src="cyclone4.jpg" width="350" height="360" >
+	  <br />
+	  <img src="cyclone5.jpg" width="350" height="360" >
+	  <img src="cyclone6.jpg" width="350" height="360" >
+	  
+	  
+	  <h2 id="VISHAKAPATNAM GAS LEAK">VISHAKAPATNAM GAS LEAK</h2>
+	  <p>The Visakhapatnam gas leak, also referred to as the Vizag gas leak, was an industrial accident that occurred at the LG Polymers chemical plant in the R. R. Venkatapuram village of the Gopalapatnam neighbourhood, located at the outskirts of Visakhapatnam, Andhra Pradesh, India, during the early morning of 7 May 2020. The resulting vapour cloud spread over a radius of around 3km (1.86 mi), affecting the nearby areas and villages. As per the National Disaster Response Force (NDRF), the death toll was 11, and more than 1,000 people became sick after being exposed to the gas.</p>
+	  <img src="vish1.jpg" width="780" height="360" >
+	   <br />
+	   
+	  
+		</div>
+</div></div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Get Immediate Response</h3>
+  <p>We will provide a form where you just need to provide your details to contact you.<br>Through this help menu we intend to provide immediate help to the people affected due to natural disaster. If anyone who is severily injured can fill this form and and through this help section we would make sure to provide suitable health care to you as soon as possible. With the help of this section we intend to minimize loss of live due to natural disasters.</p>
+  
+  <form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<p>
+<label>Name 
+<input type="text" name="customer_name" required>
+</label> 
+</p>
+
+<p>
+<label>Phone Number
+<input type="tel" name="tel_no">
+</label>
+</p>
+	
+<p>
+<label>Help Priority 
+<select id="pickup_place" name="pickup_place">
+<option value="" selected="selected">Select One</option>
+<option value="website" >IMMEDIATE</option>
+<option value="membership" >MODERATE</option>
+<option value="telepathy" >LOW PRIORITY</option>
+</select>
+</label> 
+</p>
+
+<p>
+<label>About your problem 
+<textarea name="text" maxlength="500"></textarea>
+</label>
+</p>
+
+<p><button><a href="data/submit.html">SUBMIT</a></button></p>
+
+</form>
+
+</div>
+
+<div id="About" class="tabcontent">
+  <h1>About</h1>
+  
+  <p>This website  can reduce loss of life in case of a natural disaster by providing information related to prevention and management during a natural disaster . We aim to reduce panic among the people by providing necessary actions to be taken during a disaster .
+  This project has several unique features which makes it useful . Some of them are :-
+
+:There will be an alert tab in the website which will give information about the natural disaster immediately after it takes place. It will also provide necessary actions that should be taken by people affected to reduce loss of life . It will also give location affected and any future precautions so that the people can prepare themselves for the after impact of the natural disaster.
+
+:During a natural disaster people can mark themselves as safe\unsafe so that necessary actions can be taken during relief measures . If anyone is injured in a disaster they could ask for help in the website so that necessary relief could be provided to them as soon as possible .
+
+:There will be a webpage containing several precautions taken so that people can be prepared for any sort of natural disaster .
+
+:The website will be constantly updated to provide the people about the latest information about any crisis .
+
+:During any disaster we aim to start an ALL INDIA CAMPAIGN through this website to provide relief to the victims of the disaster .</p>
+<h2>DONATE</h2>
+<p>For kerala floods :-<br /><br />
+Kerala government<br />
+ <a href="https://donation.cmdrf.kerala.gov.in/">https://donation.cmdrf.kerala.gov.in/</a><br />  <br />
+ ICICI BANK <br />
+ <a href="https://www.icicibank.com/Personal-Banking/online-donation/kerala-flood-donation.page">https://www.icicibank.com/Personal-Banking/online-donation/kerala-flood-donation.page</a></p><br />
+ PAYTM LINK<br />
+ <a href="https://paytm.com/helpinghand">https://paytm.com/helpinghand/</a>
+ </div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html>
