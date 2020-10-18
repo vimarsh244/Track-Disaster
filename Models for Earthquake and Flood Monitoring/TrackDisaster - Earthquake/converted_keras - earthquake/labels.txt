@@ -1,0 +1,2 @@
+0 Collapsed Buildings
+1 Non Collapsed Buildings
