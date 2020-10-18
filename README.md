@@ -7,7 +7,6 @@ We are using DJI Tello the flows for Nodered are in its respective Folder.
 
 #You can play and test the ML models here<br>
 https://teachablemachine.withgoogle.com/models/QxE52PTZm/<br>
-
 https://teachablemachine.withgoogle.com/models/QB4HqXx5R/
 
 
